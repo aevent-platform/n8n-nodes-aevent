@@ -15,7 +15,7 @@
     "name": "AEvent Developer",
     "email": "admin@aevent.com"
   },
-  "main": "index.js",
+  "main": "index.js", 
   "files": [
     "dist"
   ],
