@@ -9,7 +9,7 @@
   "homepage": "https://aevent.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/automa8/n8n-nodes-aevent.git"
+    "url": "git+https://github.com/aevent-platform/n8n-nodes-aevent.git"
   },
   "author": {
     "name": "AEvent Developer",
