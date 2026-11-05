@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      id-token: write  # Required for OIDC and npm provenance
+      id-token: write  # Enables OIDC / Provenance
       contents: read
 
     steps:
@@ -31,3 +31,5 @@ jobs:
 
       - name: Publish to npm with Provenance
         run: npm publish --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
