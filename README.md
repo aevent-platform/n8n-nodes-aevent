@@ -38,7 +38,7 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 1. In AEvent, open **Settings > Developer** and copy your API key.
 2. In n8n, create a new **AEvent API** credential.
 3. Paste the key into **API Key**.
-4. Leave **Base URL** as `https://app-api.aevent.com`, or set it to `https://dev-api.aevent.com` to use staging.
+4. Leave **Base URL** as `https://app-api.aevent.com`.
 
 n8n checks the key when you save the credential.
 

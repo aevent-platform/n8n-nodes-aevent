@@ -23,7 +23,7 @@ export class AeventApi implements ICredentialType {
 			name: 'baseUrl',
 			type: 'string',
 			default: 'https://app-api.aevent.com',
-			description: 'Use https://dev-api.aevent.com for staging',
+			description: '',
 		},
 	];
 
