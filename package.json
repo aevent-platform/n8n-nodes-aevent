@@ -1,0 +1,54 @@
+{
+  "name": "n8n-nodes-aevent",
+  "version": "1.0.0",
+  "description": "n8n node integration for the AEvent API",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "license": "MIT",
+  "homepage": "https://aevent.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/automa8/n8n-nodes-aevent.git"
+  },
+  "author": {
+    "name": "AEvent Developer",
+    "email": "admin@aevent.com"
+  },
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc && copyfiles -u 2 \"nodes/Aevent/*.svg\" dist/nodes/Aevent/",
+    "lint": "npx eslint \"{credentials,nodes}/**/*.ts\"",
+    "lintfix": "npx eslint \"{credentials,nodes}/**/*.ts\" --fix"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/AeventApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Aevent/Aevent.node.js",
+      "dist/nodes/Aevent/AeventTrigger.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.1",
+    "@n8n/node-cli": "^0.50.5",
+    "@typescript-eslint/eslint-plugin": "^8.71.1",
+    "@typescript-eslint/parser": "^8.71.1",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.57.1",
+    "eslint-plugin-n8n-nodes-base": "^2.0.0",
+    "gulp": "^5.0.1",
+    "n8n-workflow": "^2.16.0",
+    "rimraf": "^6.1.3",
+    "typescript": "~5.8.0"
+  }
+}
