@@ -39,7 +39,7 @@ export const registrationDescription: INodeProperties[] = [
             {
                 name: 'Get Many',
                 value: 'getAll',
-                action: 'Get registrants',
+                action: 'Get many registrants',
                 description: 'Retrieve a list of registrants',
                 routing: {
                     request: {

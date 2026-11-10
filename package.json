@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-aevent",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "n8n node integration for the AEvent API",
   "keywords": [
     "n8n-community-node-package"
@@ -15,7 +15,7 @@
     "name": "AEvent Developer",
     "email": "admin@aevent.com"
   },
-  "main": "index.js", 
+  "main": "index.js",
   "files": [
     "dist"
   ],
@@ -41,6 +41,7 @@
   "devDependencies": {
     "@eslint/js": "^8.57.1",
     "@n8n/node-cli": "^0.50.5",
+    "@n8n/scan-community-package": "^0.43.0",
     "@typescript-eslint/eslint-plugin": "^8.71.1",
     "@typescript-eslint/parser": "^8.71.1",
     "copyfiles": "^2.4.1",

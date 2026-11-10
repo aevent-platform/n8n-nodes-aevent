@@ -32,7 +32,7 @@ export const campaignDescription: INodeProperties[] = [
             {
                 name: 'Get Many',
                 value: 'getAll',
-                action: 'Get campaigns',
+                action: 'Get many campaigns',
                 description: 'Retrieve a list of campaigns',
                 routing: {
                     request: {
