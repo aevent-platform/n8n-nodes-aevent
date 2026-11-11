@@ -9,6 +9,7 @@ import type {
 export class AeventApi implements ICredentialType {
 	name = 'aeventApi';
 	displayName = 'AEvent API';
+	icon = 'file:aevent.svg' as const;
 	documentationUrl = 'https://app.aevent.com/#/settings?developer';
 	properties: INodeProperties[] = [
 		{
